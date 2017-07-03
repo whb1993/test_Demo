@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///F:/VMP/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.40 scan initiated Thu Jun 15 14:36:39 2017 as: F:\\VMP\\nmap\\nmap.exe -n -T4 -sT -PN -&#45;disable-arp-ping -&#45;max-scan-delay 0ms -&#45;min-rate 1000000 -&#45;max-retries 0 -p 21,3389,45962,7900,7901 -oX - 192.168.28.241 -->
+<nmaprun scanner="nmap" args="F:\\VMP\\nmap\\nmap.exe -n -T4 -sT -PN -&#45;disable-arp-ping -&#45;max-scan-delay 0ms -&#45;min-rate 1000000 -&#45;max-retries 0 -p 21,3389,45962,7900,7901 -oX - 192.168.28.241" start="1497508599" startstr="Thu Jun 15 14:36:39 2017" version="7.40" xmloutputversion="1.04">
+	<scaninfo type="connect" protocol="tcp" numservices="5" services="21,3389,7900-7901,45962"/>
+	<verbose level="0"/>
+	<debugging level="0"/>
+	<host starttime="1497508599" endtime="1497508599"><status state="up" reason="user-set" reason_ttl="0"/>
+		<address addr="192.168.28.241" addrtype="ipv4"/>
+		<hostnames>
+		this is hostnames
+		</hostnames>
+		<ports>
+			<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+			<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+			<port protocol="tcp" portid="7900"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="mevent" method="table" conf="3"/></port>
+			<port protocol="tcp" portid="7901"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="tnos-sp" method="table" conf="3"/></port>
+			<port protocol="tcp" portid="45962"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+		</ports>
+		<times srtt="4625" rttvar="4500" to="100000"/>
+	</host>
+	<runstats><finished time="1497508599" timestr="Thu Jun 15 14:36:39 2017" elapsed="0.25" summary="Nmap done at Thu Jun 15 14:36:39 2017; 1 IP address (1 host up) scanned in 0.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+	</runstats>
+	<hostnames>
+		this is hostnames
+		</hostnames>
+</nmaprun>
