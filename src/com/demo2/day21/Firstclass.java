@@ -8,5 +8,6 @@ public class Firstclass {
         System.out.println("Hello World!");
         System.out.println("实现");
 
+
     }
 }
