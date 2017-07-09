@@ -6,7 +6,7 @@ package com.demo2.day21;
 public class Firstclass {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        System.out.println("实现");
+        System.out.println("添加分支");
 
 
     }
