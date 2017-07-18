@@ -23,6 +23,7 @@ public class JDBCDemo {
         //创建于编译的语句
         PreparedStatement st = conn.prepareStatement(sql);
         //设置参数
+        st.setString(1,null);
         st.setString(2,"第二个");
         st.setString(3,"第三个");
 

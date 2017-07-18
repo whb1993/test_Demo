@@ -16,7 +16,7 @@
     <orderEntry type="library" exported="" name="poi-3.16" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-5.1.39-bin" level="project" />
     <orderEntry type="library" exported="" name="org.nmap4j-1.1.0-javadoc" level="project" />
-    <orderEntry type="library" exported="" name="c3p0-0.9.2.1" level="project" />
     <orderEntry type="library" exported="" name="commons-dbutils-1.6" level="project" />
+    <orderEntry type="library" exported="" name="c3p0-0.9.1.2" level="project" />
   </component>
 </module>
