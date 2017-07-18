@@ -2,10 +2,7 @@ package com.demo2.day26;
 
 import org.junit.Test;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 /**
  * Created by whb on 2017/7/18.
@@ -36,6 +33,12 @@ public class JDBCDemo {
             System.out.println("success");
         } else {
             System.out.println("fail");
+        }
+        sql ="select * from kanban";
+        Statement s = conn.createStatement();
+        ResultSet resultSet = s.executeQuery(sql);
+        while (resultSet.next()){
+            System.out.println(resultSet.getString(1));
         }
 
         //释放资源.
