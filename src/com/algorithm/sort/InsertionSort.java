@@ -8,13 +8,14 @@ import org.junit.Test;
  */
 public class InsertionSort {
 
-    // 最差时间复杂度 ----.O(n^2) -- 降序排列
-    // 最优时间复杂度 ---- O(n)   -- 升序排列
-    // 平均时间复杂度 ---- O(n^2)
-    // 所需辅助空间 ------ O(1)
-    // 稳定性 ------------ 稳定
+
     /**
      * 直接插入排序
+     // 最差时间复杂度 ----.O(n^2) -- 降序排列
+     // 最优时间复杂度 ---- O(n)   -- 升序排列
+     // 平均时间复杂度 ---- O(n^2)
+     // 所需辅助空间 ------ O(1)
+     // 稳定性 ------------ 稳定
      */
     void insertionSort(int A[], int n){
         for (int i = 1; i < n; i++){         // 类似抓扑克牌排序
@@ -28,13 +29,14 @@ public class InsertionSort {
         }
     }
 
-    // 最差时间复杂度 ---- O(n^2)
-    // 最优时间复杂度 ---- O(nlogn)
-    // 平均时间复杂度 ---- O(n^2)
-    // 所需辅助空间 ------ O(1)
-    // 稳定性 ------------ 稳定
+
     /**
      * 二分插入排序
+     // 最差时间复杂度 ---- O(n^2)
+     // 最优时间复杂度 ---- O(nlogn)
+     // 平均时间复杂度 ---- O(n^2)
+     // 所需辅助空间 ------ O(1)
+     // 稳定性 ------------ 稳定
      */
     void InsertionSortDichotomy(int A[], int n){
         for (int i = 1; i < n; i++) {
@@ -55,29 +57,25 @@ public class InsertionSort {
         }
     }
 
-    // 最差时间复杂度 ---- 根据步长序列的不同而不同。已知最好的为O(n(logn)^2)
-    // 最优时间复杂度 ---- O(n)
-    // 平均时间复杂度 ---- 根据步长序列的不同而不同。
-    // 所需辅助空间 ------ O(1)
-    // 稳定性 ------------ 不稳定
+
     /**
      * 希尔排序
+     // 最差时间复杂度 ---- 根据步长序列的不同而不同。已知最好的为O(n(logn)^2)
+     // 最优时间复杂度 ---- O(n)
+     // 平均时间复杂度 ---- 根据步长序列的不同而不同。
+     // 所需辅助空间 ------ O(1)
+     // 稳定性 ------------ 不稳定
      */
-    void ShellSort(int A[], int n)
-    {
+    void ShellSort(int A[], int n) {
         int h = 0;
-        while (h <= n)                          // 生成初始增量
-        {
+        while (h <= n){                         // 生成初始增量
             h = 3 * h + 1;
         }
-        while (h >= 1)
-        {
-            for (int i = h; i < n; i++)
-            {
+        while (h >= 1) {
+            for (int i = h; i < n; i++) {
                 int j = i - h;
                 int get = A[i];
-                while (j >= 0 && A[j] > get)
-                {
+                while (j >= 0 && A[j] > get) {
                     A[j + h] = A[j];
                     j = j - h;
                 }
@@ -87,9 +85,4 @@ public class InsertionSort {
         }
     }
 
-@Test
-    public void sss(){
-        int i = 1/2;
-    System.out.println(i);
-    }
 }
