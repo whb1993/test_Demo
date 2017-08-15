@@ -8,7 +8,16 @@ import org.junit.Test;
  */
 public class InsertionSort {
 
-
+    @Test
+    public void testDemo(){
+        int A[] = { 14,5, 2,16, 13,17,12,9, 4,15,18, 11,7, 6, 1, 3, 8 ,10}; // 从小到大快速排序
+        int n = A.length;
+        ShellSort(A, n );
+        System.out.println("快速排序结果：");
+        for (int i = 0; i <A.length ; i++) {
+            System.out.print(A[i]);
+        }
+    }
     /**
      * 直接插入排序
      // 最差时间复杂度 ----.O(n^2) -- 降序排列
@@ -73,15 +82,25 @@ public class InsertionSort {
         }
         while (h >= 1) {
             for (int i = h; i < n; i++) {
+
                 int j = i - h;
                 int get = A[i];
                 while (j >= 0 && A[j] > get) {
                     A[j + h] = A[j];
                     j = j - h;
+                    for (int m = 0; m <A.length ; m++) {
+                        System.out.print(A[m]);
+                    }
+                    System.out.println("");
                 }
                 A[j + h] = get;
+                for (int m = 0; m <A.length ; m++) {
+                    System.out.print(A[m]);
+                }
+                System.out.println("******");
             }
             h = (h - 1) / 3;                    // 递减增量
+
         }
     }
 
