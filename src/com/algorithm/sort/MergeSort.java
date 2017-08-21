@@ -1,5 +1,7 @@
 package com.algorithm.sort;
 
+import org.junit.Test;
+
 /**
  * Created by Administrator on 2017/8/14.
  * 归并排序
@@ -11,6 +13,17 @@ public class MergeSort {
     // 所需辅助空间 ------ O(n)
     // 稳定性 ------------ 稳定
 
+    @Test
+    public void test(){
+        int A[] = { 5, 2, 9, 4, 7, 6, 1, 3, 8 }; // 从小到大快速排序
+        int n = A.length;
+        // MergeSortRecursion(A, 0,n-1);
+        MergeSortIteration(A, n);
+        System.out.println("归并排序结果：");
+        for (int i = 0; i <A.length ; i++) {
+            System.out.print(A[i]);
+        }
+    }
     void Merge(int A[], int left, int mid, int right)// 合并两个已排好序的数组A[left...mid]和A[mid+1...right]
     {
         int len = right - left + 1;

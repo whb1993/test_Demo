@@ -88,16 +88,8 @@ public class InsertionSort {
                 while (j >= 0 && A[j] > get) {
                     A[j + h] = A[j];
                     j = j - h;
-                    for (int m = 0; m <A.length ; m++) {
-                        System.out.print(A[m]);
-                    }
-                    System.out.println("");
                 }
                 A[j + h] = get;
-                for (int m = 0; m <A.length ; m++) {
-                    System.out.print(A[m]);
-                }
-                System.out.println("******");
             }
             h = (h - 1) / 3;                    // 递减增量
 

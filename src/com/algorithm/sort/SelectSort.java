@@ -1,11 +1,23 @@
 package com.algorithm.sort;
 
+import org.junit.Test;
+
 /**
  * Created by Administrator on 2017/8/14.
  * 选择排序
  */
 public class SelectSort {
 
+    @Test
+    public void test(){
+        int A[] = { 5, 2, 9, 4, 7, 6, 1, 3, 8 }; // 从小到大快速排序
+        int n = A.length;
+        HeapSort(A, n);
+        System.out.println("堆排序结果：");
+        for (int i = 0; i <A.length ; i++) {
+            System.out.print(A[i]);
+        }
+    }
     /**
      * 简单选择排序
      // 最差时间复杂度 ---- O(n^2)
