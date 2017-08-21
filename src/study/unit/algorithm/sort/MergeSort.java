@@ -1,4 +1,4 @@
-package com.algorithm.sort;
+package study.unit.algorithm.sort;
 
 import org.junit.Test;
 

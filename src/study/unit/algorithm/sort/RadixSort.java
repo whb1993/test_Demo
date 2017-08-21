@@ -1,4 +1,4 @@
-package com.algorithm.sort;
+package study.unit.algorithm.sort;
 
 /**
  * Created by Administrator on 2017/8/14.
