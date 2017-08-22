@@ -79,13 +79,13 @@ public class demoStart {
      * B.BufferedInputStream
      * BufferedInputStream 内置了一个缓冲区(数组)
      * 从BufferedInputStream中读取一个字节时
-     * BufferedInputStream会一次性从文件中读取8192个, 存在缓冲区中, 返回给程序一个
+     * BufferedInputStream 会一次性从文件中读取8192个, 存在缓冲区中, 返回给程序一个
      * 程序再次读取时, 就不用找文件了, 直接从缓冲区中获取
      * 直到缓冲区中所有的都被使用过, 才重新从文件中读取8192个
      * C.BufferedOutputStream
-     * BufferedOutputStream也内置了一个缓冲区(数组)
+     * BufferedOutputStream 也内置了一个缓冲区(数组)
      * 程序向流中写出字节时, 不会直接写到文件, 先写到缓冲区中
-     * 直到缓冲区写满, BufferedOutputStream才会把缓冲区中的数据一次性写到文件里
+     * 直到缓冲区写满, BufferedOutputStream 才会把缓冲区中的数据一次性写到文件里
      */
     @Test
     public void bufferDemo(){

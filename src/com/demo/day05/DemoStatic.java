@@ -17,6 +17,7 @@ public  class  DemoStatic {
 }
  class haha extends Person{
     haha(){
-        System.out.println(age1);
+        System.out.println(1);
+        // System.out.println(age1);
     }
 }

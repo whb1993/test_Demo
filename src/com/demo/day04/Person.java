@@ -2,10 +2,12 @@ package com.demo.day04;
 
 import com.demo.day05.OutPut;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2017/6/9.
  */
-public class Person {
+public class Person implements Serializable {
     int age = 1;
     protected int age1 = 1;
     public static void main (String[] args){
