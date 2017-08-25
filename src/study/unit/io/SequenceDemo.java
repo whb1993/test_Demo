@@ -127,10 +127,11 @@ public class SequenceDemo {
             list.add(p2);
             list.add(p3);
             list.add(p4);
-            System.out.println(list);
+            //System.out.println(list);
             objectwriter.writeObject(list);
 
-            objectwriter.writeObject(new Student("gg", 22));
+            p4.setAge(99);
+            objectwriter.writeObject(p4);
             objectwriter.writeObject(new Student("tt", 18));
             objectwriter.writeObject(new Student("rr", 17));
 //ObjectOutputStream.writeObject()的作用是把一个实例的对象以文件的形式保存到磁盘上，这个过程就叫Java对象的持久化。
@@ -155,11 +156,27 @@ public class SequenceDemo {
 
 class Student implements Serializable{
     private String name;
-    private int age;
+    private transient int age;
 
     public Student(String name, int age) {
         super();
         this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
 

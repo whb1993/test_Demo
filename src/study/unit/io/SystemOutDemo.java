@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 /**
  * Created by wanghongbin on 2017/8/23 11:12.
+ *
  */
 public class SystemOutDemo {
 
