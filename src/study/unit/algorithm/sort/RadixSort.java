@@ -2,6 +2,7 @@ package study.unit.algorithm.sort;
 
 /**
  * Created by Administrator on 2017/8/14.
+ * 基数排序
  */
 public class RadixSort {
     public static int[] radixSort(int[] target, int r, int d, int n){
@@ -35,3 +36,9 @@ public class RadixSort {
         return target;
     }
 }
+
+/**
+ * 参考文档
+ * http://www.cnblogs.com/Braveliu/archive/2013/01/21/2870201.html
+ */
+

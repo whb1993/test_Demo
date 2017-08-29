@@ -1,4 +1,4 @@
-package study.unit.algorithm.demo1;
+package study.unit.algorithm.Test.demo1;
 
 import java.util.Scanner;
 
@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入:");
         int start = -1;

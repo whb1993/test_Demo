@@ -48,6 +48,7 @@ public class SelectSort {
      // 所需辅助空间 ------ O(1)
      // 稳定性 ------------ 不稳定
      */
+    //完全二叉树
     void Heapify(int A[], int i, int size)  // 从A[i]向下进行堆调整
     {
         int left_child = 2 * i + 1;         // 左孩子索引

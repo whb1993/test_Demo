@@ -1,6 +1,4 @@
-package study.unit.algorithm.demo1;
-
-import java.util.Scanner;
+package study.unit.algorithm.Test.demo1;
 
 /**
  * Created by wanghongbin on 2017/8/22 16:51.
