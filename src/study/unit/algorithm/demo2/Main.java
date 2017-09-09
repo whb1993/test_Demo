@@ -1,5 +1,7 @@
 package study.unit.algorithm.demo2;
 
+import org.junit.Test;
+
 import java.util.Scanner;
 
 /**
@@ -27,6 +29,21 @@ public class Main {
         }
             System.out.print(output+out[out.length-1]);
 
+    }
+    @Test
+    public void test(){
+        int n =2;
+        String name ="abcdeabcde";
+        int length = name.length();
+        int num = length-n;
+        int 总数=length;
+        for (int i = 1; i <num ; i++) {
+            总数=总数*(length-i);
+        }
+        for (int i = 0; i <num-1 ; i++) {
+            总数=总数/(num-i);
+        }
+        System.out.println(总数);
     }
 
 
