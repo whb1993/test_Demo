@@ -7,12 +7,13 @@ public class DemoTest extends Thread {
     @Override
     public void run() {
         super.run();
-
     }
 
     public static void main(String[] args) {
-        InterruptDemo interruptDemo = new InterruptDemo();
-        Thread thread1 = new Thread(interruptDemo);
-        Thread thread2 = new Thread(interruptDemo);
+        InterruptDemo demo = new InterruptDemo();
+        Thread thread1 = new Thread(demo);
+        Thread thread2 = new Thread(demo);
+        thread1.start();
+
     }
 }
