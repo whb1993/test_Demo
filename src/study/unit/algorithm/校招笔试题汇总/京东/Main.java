@@ -1,10 +1,10 @@
-package study.unit.algorithm.京东;
+package study.unit.algorithm.校招笔试题汇总.京东;
 
 /**
  * Created by wanghongbin on 2017/9/8 19:32.
  * 京东笔试算法题
  */
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
        //  Scanner in = new Scanner(System.in);

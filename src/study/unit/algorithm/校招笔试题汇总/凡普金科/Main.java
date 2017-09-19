@@ -1,4 +1,4 @@
-package study.unit.algorithm.凡普金科;
+package study.unit.algorithm.校招笔试题汇总.凡普金科;
 
 import org.junit.Test;
 
