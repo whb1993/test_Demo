@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by wanghongbin on 2017/9/18 18:53.
+ * 长桌隔一个位置坐人
  */
 public class Main {
     public static void main(String[] args) {

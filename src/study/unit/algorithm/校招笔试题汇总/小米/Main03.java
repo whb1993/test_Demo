@@ -4,6 +4,7 @@ import java.util.Locale;
 
 /**
  * Created by wanghongbin on 2017/9/18 20:30.
+ * 三角形中出现第一次位置
  */
 public class Main03 {
     public static void main(String[] args) {

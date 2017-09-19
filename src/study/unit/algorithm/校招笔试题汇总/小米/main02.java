@@ -2,6 +2,7 @@ package study.unit.algorithm.校招笔试题汇总.小米;
 
 /**
  * Created by wanghongbin on 2017/9/18 19:50.
+ * 添加一个是否为回文
  */
 public class main02 {
     public static void main(String[] args) {
